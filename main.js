@@ -100,6 +100,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── Calendar view more (mobile) ─────────────────────────── */
+  const calendarRaces = document.getElementById('calendarRaces');
+  const calendarViewMore = document.getElementById('calendarViewMore');
+
+  if (calendarRaces && calendarViewMore) {
+    calendarViewMore.addEventListener('click', () => {
+      const isExpanded = !calendarRaces.classList.contains('is-collapsed');
+      if (isExpanded) {
+        calendarRaces.classList.add('is-collapsed');
+        calendarViewMore.textContent = 'VIEW MORE';
+        calendarViewMore.setAttribute('aria-expanded', 'false');
+      } else {
+        calendarRaces.classList.remove('is-collapsed');
+        calendarViewMore.textContent = 'VIEW LESS';
+        calendarViewMore.setAttribute('aria-expanded', 'true');
+      }
+    });
+  }
+
   /* ── Contact form ─────────────────────────────────────────── */
   const form = document.getElementById('contactForm');
   if (form) {

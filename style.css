@@ -533,6 +533,10 @@ body {
 .races-list::-webkit-scrollbar-track { background: var(--light); border-radius: 4px; }
 .races-list::-webkit-scrollbar-thumb { background: var(--red); border-radius: 4px; }
 
+.calendar-view-more {
+  display: none;
+}
+
 .race-item {
   display: grid;
   grid-template-columns: 80px 1fr auto;
@@ -904,6 +908,34 @@ body {
 
   .race-item { grid-template-columns: 64px 1fr; }
   .race-status { display: none; }
+
+  /* Mobile: avoid nested scroll container for better touch behavior */
+  .races-list {
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+
+  .races-list.is-collapsed .race-item:nth-child(n+7) {
+    display: none;
+  }
+
+  .calendar-view-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 9px 18px;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--black);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 600px) {
