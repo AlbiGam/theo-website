@@ -633,6 +633,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  background: #0f1113;
 }
 
 .contact-photo {
@@ -866,9 +867,24 @@ body {
 
 /* ─── RESPONSIVE ────────────────────────────────────────────── */
 @media (max-width: 900px) {
+  .section {
+    min-height: auto;
+  }
+
+  .hero,
+  .contact-section,
+  .contact-photo-wrap,
+  .contact-overlay {
+    min-height: 100vh;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: 50vh auto;
+  }
+
+  .contact-photo {
+    object-fit: cover;
   }
 
   .hero-photo-wrap { min-height: 50vh; }
@@ -940,7 +956,7 @@ body {
 
 @media (max-width: 600px) {
   .navbar { padding: 0 20px; }
-  .partners-inner, .calendar-inner { padding: 80px 24px; }
+  .partners-inner, .calendar-inner { padding: 56px 20px; }
   .partners-grid { grid-template-columns: 1fr; }
   .stats-row { gap: 28px; flex-wrap: wrap; }
   .footer { padding: 28px 24px; }
@@ -987,5 +1003,40 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 900px) and (max-height: 820px) {
+  .hero {
+    grid-template-rows: 42vh auto;
+  }
+
+  .hero-photo-wrap {
+    min-height: 42vh;
+  }
+
+  .hero-content {
+    padding: 30px 28px 36px;
+  }
+
+  .hero-label {
+    margin-bottom: 16px;
+  }
+
+  .hero-name {
+    margin-bottom: 18px;
+  }
+
+  .name-first,
+  .name-last {
+    font-size: clamp(58px, 16vw, 78px);
+  }
+
+  .hero-sub {
+    margin-bottom: 22px;
+  }
+
+  .btn-learn {
+    padding: 11px 28px;
   }
 }
