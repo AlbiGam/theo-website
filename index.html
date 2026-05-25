@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theo Ganadik – Karting Driver</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-left">
+      <a href="#home" class="logo">
+        <div class="logo-mark">
+          <img src="public/images/logo.png" alt="Theo Ganadik logo" />
+        </div>
+        <span class="logo-name">THEO GANDAIK</span>
+      </a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/theoganadik" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@theo.ganadik" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34l-.01-8.83a8.18 8.18 0 0 0 4.78 1.52V4.55a4.85 4.85 0 0 1-1-.14z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <nav class="nav-center">
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#partners" class="nav-link">PARTNERS</a>
+      <a href="#calendar" class="nav-link">CALENDAR</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#contact" class="btn-contact">CONTACT</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ───── MOBILE SIDEBAR ───── -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-close" id="sidebarClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="sidebar-logo">
+      <img src="public/images/logo.png" alt="Theo Ganadik" />
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#home"    class="sidebar-link">HOME</a>
+      <a href="#about"   class="sidebar-link">ABOUT</a>
+      <a href="#partners" class="sidebar-link">PARTNERS</a>
+      <a href="#calendar" class="sidebar-link">CALENDAR</a>
+      <a href="#contact"  class="sidebar-link">CONTACT</a>
+    </nav>
+    <div class="sidebar-social">
+      <a href="https://www.instagram.com/theoganadik" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@theo.ganadik" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34l-.01-8.83a8.18 8.18 0 0 0 4.78 1.52V4.55a4.85 4.85 0 0 1-1-.14z"/>
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ───── DOT NAVIGATION ───── -->
+  <nav class="dot-nav" id="dotNav">
+    <a href="#home" class="dot active" data-section="home"></a>
+    <a href="#about" class="dot" data-section="about"></a>
+    <a href="#partners" class="dot" data-section="partners"></a>
+    <a href="#calendar" class="dot" data-section="calendar"></a>
+    <a href="#contact" class="dot" data-section="contact"></a>
+  </nav>
+
+  <!-- ───── HERO ───── -->
+  <section class="section hero" id="home">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-overlay"></div>
+      <div class="hero-photo" id="heroPhoto"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label">
+        <span class="label-line"></span>
+        <span class="label-text">KARTING DRIVER</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-first">THEO</span>
+        <span class="name-last">GANDAIK</span>
+      </h1>
+      <p class="hero-sub">Racing driver from Slovakia</p>
+      <a href="#about" class="btn-learn">LEARN MORE</a>
+    </div>
+  </section>
+
+  <!-- ───── ABOUT ───── -->
+  <section class="section about-section" id="about">
+    <div class="about-photo-wrap">
+      <div class="about-photo"></div>
+    </div>
+    <div class="about-content">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span class="label-text">ABOUT ME</span>
+      </div>
+      <h2 class="section-title">THE DRIVER</h2>
+      <p class="about-intro">Welcome to my personal website, where I will introduce you to more about my karting world.</p>
+      <div class="about-copy" id="aboutCopy">
+        <p class="about-text">
+          Hello. My name is Theo Ganadik, I am 13 years old and I come from Poprad, Slovakia. 
+          I drive for the KidiX driver performance team. I have been a professional karting racer since 
+          I was eight years old. I want to be the best, so I go to race and train in Italy where the 
+          best of the best are racing. I became a multiple vice-champion of Slovakia, champion of Slovakia 
+          in 2024, in the Italian Cup in 2025 I finished in 8th place, even with some bad luck, and in 
+          the world championships I finished in the top 10.
+        </p>
+        <p class="about-text">
+          You can see more about my journey, training and racing here and on Instagram or Facebook.
+        </p>
+      </div>
+      <button type="button" class="about-read-more" id="aboutReadMore" aria-expanded="false" aria-controls="aboutCopy">READ MORE</button>
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-number">#1</span>
+          <span class="stat-label">Slovakia Champion 2024</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">8th</span>
+          <span class="stat-label">Italian Cup 2025</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">Top 10</span>
+          <span class="stat-label">World Championship</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PARTNERS ───── -->
+  <section class="section partners-section" id="partners">
+    <div class="partners-inner">
+      <div class="section-label centered">
+        <span class="label-line"></span>
+        <span class="label-text">PARTNERS</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title centered">SUPPORTING THE JOURNEY</h2>
+      <p class="partners-sub centered">Proud to race alongside world-class partners who believe in the vision.</p>
+      <div class="partners-grid">
+
+        <a href="https://www.ganamont.sk" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="public/images/Gana%20mont.jpg" alt="Gana Mont" />
+          </div>
+          <span class="partner-name">Gana Mont</span>
+          <span class="partner-desc">Fire Protection Systems</span>
+        </a>
+
+        <a href="https://vl-racing.webnode.sk" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="public/images/R-VLK%20racing%20cervene.jpg" alt="R-VLK Racing" />
+          </div>
+          <span class="partner-name">R-VLK Racing</span>
+          <span class="partner-desc">Racing Company</span>
+        </a>
+
+        <a href="tel:+421903415820" class="partner-card">
+          <div class="partner-logo">
+            <img src="public/images/Stavex%20DDD.jpg" alt="Stavex DDD Tatry" />
+          </div>
+          <span class="partner-name">Stavex DDD Tatry</span>
+          <span class="partner-desc">Deratization &amp; Disinfection</span>
+        </a>
+
+        <a href="https://www.tatrygames.sk" target="_blank" rel="noopener noreferrer" class="partner-card partner-card--text">
+          <div class="partner-logo partner-logo--text">
+            <span class="partner-logo-text">TATRY<br/>GAMES</span>
+          </div>
+          <span class="partner-name">Tatry Games</span>
+          <span class="partner-desc">Entertainment Company</span>
+        </a>
+
+        <a href="#" class="partner-card">
+          <div class="partner-logo">
+            <img src="public/images/logo%20MIKONA%20...%20on%20the%20road.jpg" alt="Mikona" />
+          </div>
+          <span class="partner-name">Mikona</span>
+          <span class="partner-desc">Tires &amp; Automotive</span>
+        </a>
+
+        <a href="https://www.kompava.sk" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="public/images/logo_zelene_variant1[1].svg" alt="Kompava" />
+          </div>
+          <span class="partner-name">Kompava</span>
+          <span class="partner-desc">Sport Nutrition</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CALENDAR ───── -->
+  <section class="section calendar-section" id="calendar">
+    <div class="calendar-inner">
+      <div class="calendar-photo-wrap">
+        <img src="public/images/calendar.jpeg" alt="Theo Ganadik racing during the season" class="calendar-photo" />
+      </div>
+      <div class="calendar-content">
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span class="label-text">RACE CALENDAR</span>
+        </div>
+        <h2 class="section-title">2026 SEASON</h2>
+        <div class="races-list">
+
+          <!-- ── COMPLETED ── -->
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">11</span>
+              <span class="race-month">FEB</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">WSK Euroseries – Round 1</span>
+              <span class="race-location">Viterbo, Italy</span>
+            </div>
+            <div class="race-status status-done">COMPLETED</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">28</span>
+              <span class="race-month">FEB</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Italy – Round 1</span>
+              <span class="race-location">Franciacorta, Italy</span>
+            </div>
+            <div class="race-status status-result">P13</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">27</span>
+              <span class="race-month">MAR</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Italy – Round 2</span>
+              <span class="race-location">Jesolo, Italy</span>
+            </div>
+            <div class="race-status status-result">P4</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">03</span>
+              <span class="race-month">APR</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Championship – Round 1</span>
+              <span class="race-location">Slovakia Ring</span>
+            </div>
+            <div class="race-status status-result">P2</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">15</span>
+              <span class="race-month">APR</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">WSK Euroseries – Round 2</span>
+              <span class="race-location">Lonato, Italy</span>
+            </div>
+            <div class="race-status status-done">COMPLETED</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">24</span>
+              <span class="race-month">APR</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Karting Cup – Round 1</span>
+              <span class="race-location">Slovakia Ring</span>
+            </div>
+            <div class="race-status status-result result-win">P1</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">15</span>
+              <span class="race-month">MAY</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Italy – Round 3</span>
+              <span class="race-location">Cremona, Italy</span>
+            </div>
+            <div class="race-status status-done">COMPLETED</div>
+          </div>
+
+          <!-- ── NEXT RACE ── -->
+          <div class="race-item highlight">
+            <div class="race-date">
+              <span class="race-day">29</span>
+              <span class="race-month">MAY</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Karting Cup – Round 2</span>
+              <span class="race-location">Steel Ring Trinec</span>
+            </div>
+            <div class="race-status status-next">NEXT RACE</div>
+          </div>
+
+          <!-- ── UPCOMING ── -->
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">12</span>
+              <span class="race-month">JUN</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Championship – Round 2</span>
+              <span class="race-location">Steel Ring Trinec</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">19</span>
+              <span class="race-month">JUN</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Italy – Round 4</span>
+              <span class="race-location">7 Laghi, Italy</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">26</span>
+              <span class="race-month">JUN</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Karting Cup – Round 3</span>
+              <span class="race-location">Bruck, Austria</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">08</span>
+              <span class="race-month">JUL</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">WSK Euroseries – Round 3</span>
+              <span class="race-location">Cremona, Italy</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">17</span>
+              <span class="race-month">JUL</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Italy – Round 5</span>
+              <span class="race-location">Trento, Italy</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">24</span>
+              <span class="race-month">JUL</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Karting Cup – Round 4</span>
+              <span class="race-location">Steel Ring Trinec</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">07</span>
+              <span class="race-month">AUG</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Championship – Round 4</span>
+              <span class="race-location">Steel Ring Trinec</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">14</span>
+              <span class="race-month">AUG</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Karting Cup – Round 5</span>
+              <span class="race-location">Bruck, Austria</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">28</span>
+              <span class="race-month">AUG</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Championship – Round 5</span>
+              <span class="race-location">Vysoke Myto, Czech Republic</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">11</span>
+              <span class="race-month">SEP</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Karting Cup – Round 6</span>
+              <span class="race-location">Slovakia Ring</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">18</span>
+              <span class="race-month">SEP</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Italy – Round 7</span>
+              <span class="race-location">Lonato, Italy</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item highlight">
+            <div class="race-date">
+              <span class="race-day">02</span>
+              <span class="race-month">OCT</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Easykart Grand Finals</span>
+              <span class="race-location">Lonato, Italy</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+          <div class="race-item">
+            <div class="race-date">
+              <span class="race-day">09</span>
+              <span class="race-month">OCT</span>
+            </div>
+            <div class="race-info">
+              <span class="race-name">Slovak Championship – Round 6</span>
+              <span class="race-location">Slovakia Ring</span>
+            </div>
+            <div class="race-status status-upcoming">UPCOMING</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-photo-wrap">
+      <img src="public/images/contact.jpeg" alt="Contact Theo Ganadik" class="contact-photo" />
+      <div class="contact-overlay">
+        <div class="contact-overlay-content">
+          <div class="section-label centered">
+            <span class="label-line"></span>
+            <span class="label-text">GET IN TOUCH</span>
+            <span class="label-line"></span>
+          </div>
+          <h2 class="section-title centered contact-title">CONTACT</h2>
+          <p class="contact-sub centered">For sponsorship enquiries, media requests or general questions.</p>
+          <div class="contact-details">
+            <a href="mailto:ivan.ganadik@ganamont.sk" class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+              </svg>
+              ivan.ganadik@ganamont.sk
+            </a>
+            <a href="tel:+421907906430" class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 2.99 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              +421 907 906 430
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-mark small">
+          <img src="public/images/logo.png" alt="Theo Ganadik logo" />
+        </div>
+        <span class="logo-name">THEO GANDAIK</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Theo Ganadik. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/theoganadik" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@theo.ganadik" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34l-.01-8.83a8.18 8.18 0 0 0 4.78 1.52V4.55a4.85 4.85 0 0 1-1-.14z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
