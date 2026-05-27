@@ -953,8 +953,39 @@ body {
 
 /* ─── RESPONSIVE ────────────────────────────────────────────── */
 @media (max-width: 900px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(7, 12, 26, 0.7), rgba(7, 12, 26, 0.3));
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    z-index: 120;
+  }
+
+  .logo-name {
+    color: rgba(255,255,255,0.92);
+  }
+
+  .social-link {
+    color: rgba(255,255,255,0.88);
+  }
+
+  .social-link:hover {
+    color: rgba(255,255,255,1);
+  }
+
+  .hamburger span {
+    background: rgba(255,255,255,0.92);
+  }
+
   .section {
     min-height: auto;
+  }
+
+  .hero-photo {
+    background-image: url('public/images/hero_mobile.jpeg');
   }
 
   .hero,
@@ -965,22 +996,73 @@ body {
   }
 
   .hero {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50vh auto;
+    display: block;
+    min-height: 100svh;
   }
 
   .contact-photo {
     object-fit: cover;
   }
 
-  .hero-photo-wrap { min-height: 50vh; }
+  .hero-photo-wrap { min-height: 100svh; }
 
   .hero-photo-overlay {
-    background: linear-gradient(to bottom, transparent 40%, var(--white) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.7) 100%);
   }
 
   .hero-content {
-    padding: 48px 36px 72px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 22px 22px calc(16px + env(safe-area-inset-bottom));
+    color: var(--white);
+  }
+
+  .hero-label {
+    margin-bottom: 10px;
+  }
+
+  .hero-name {
+    margin-bottom: 12px;
+    line-height: 0.9;
+  }
+
+  .name-first,
+  .name-last {
+    font-size: clamp(52px, 15vw, 72px);
+  }
+
+  .hero-label .label-line {
+    background: var(--red);
+  }
+
+  .hero-label .label-text {
+    color: rgba(255,255,255,0.82);
+  }
+
+  .name-first {
+    color: var(--white);
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: rgba(255,255,255,0.86);
+  }
+
+  .btn-learn {
+    padding: 10px 20px;
+    font-size: 12px;
+    color: var(--white);
+    border-color: rgba(255,255,255,0.55);
+  }
+
+  .btn-learn:hover {
+    background: var(--white);
+    color: var(--black);
+    border-color: var(--white);
   }
 
   .about-section {
@@ -1115,36 +1197,30 @@ body {
 }
 
 @media (max-width: 900px) and (max-height: 820px) {
-  .hero {
-    grid-template-rows: 42vh auto;
-  }
-
-  .hero-photo-wrap {
-    min-height: 42vh;
-  }
-
   .hero-content {
-    padding: 30px 28px 36px;
+    padding: 16px 16px calc(12px + env(safe-area-inset-bottom));
   }
 
   .hero-label {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .hero-name {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
 
   .name-first,
   .name-last {
-    font-size: clamp(58px, 16vw, 78px);
+    font-size: clamp(42px, 12.5vw, 56px);
   }
 
   .hero-sub {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
+    font-size: 13px;
   }
 
   .btn-learn {
-    padding: 11px 28px;
+    padding: 9px 16px;
+    font-size: 11px;
   }
 }
